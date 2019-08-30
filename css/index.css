@@ -1,1 +1,295 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 62.5%;
+  width: 1000px;
+  margin: 0 auto;
+  color: whitesmoke;
+}
+body h1 {
+  font-size: 3rem;
+}
+body p {
+  font-size: 1.7rem;
+}
+body h4 {
+  font-size: 2rem;
+}
+body h3 {
+  font-size: 2rem;
+}
+body ul {
+  font-size: 2rem;
+}
+body li {
+  font-size: 1.7rem;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #2e3141;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 500px;
+  }
+}
+.navcontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4c5c96;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+.navcontainer a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+header {
+  display: flex;
+  border: 1px solid whitesmoke;
+  background-color: #4c5c96;
+  color: whitesmoke;
+  line-height: 3rem;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
+header img {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  header img {
+    width: 100%;
+  }
+}
+header .name {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Snell Roundhand", cursive;
+}
+header .column-child {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header .column-child {
+    width: 100%;
+  }
+}
+header h1 {
+  margin-bottom: 0.2rem;
+}
+.mid-container {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .mid-container {
+    flex-direction: column;
+  }
+}
+.mid-container .contentcolumn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #4c5c96;
+  border: 1px solid whitesmoke;
+  margin: 2rem 2rem 0 0;
+  padding: 0.5rem;
+  line-height: 2.3rem;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .mid-container .contentcolumn {
+    width: 100%;
+  }
+}
+.mid-container .listcolumn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #4c5c96;
+  border: 1px solid whitesmoke;
+  margin: 2rem 0 0 2rem;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .mid-container .listcolumn {
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+}
+.footer-container {
+  border: 1px solid whitesmoke;
+  background-color: #4c5c96;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+.footer-container .setup {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer-container .continued {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer-container .setuptop {
+  border: 1px solid whitesmoke;
+  width: 100%;
+  padding: 0.8rem;
+}
+@media (max-width: 500px) {
+  .footer-container .setuptop {
+    font-size: 1.2rem;
+  }
+}
+.footer-container h3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
